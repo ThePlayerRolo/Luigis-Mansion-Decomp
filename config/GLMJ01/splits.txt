@@ -14,11 +14,11 @@ Sections:
 
 Runtime.PPCEABI.H/global_destructor_chain.c:
 	.text       start:0x801F5180 end:0x801F51E0
-	.dtors      start:0x80200FA0 end:0x80200FA4
+	.dtors      start:0x80200FA8 end:0x80200FAC
 	.sbss       start:0x804A2320 end:0x804A2328
 
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x801F76EC end:0x801F7768
 	.ctors      start:0x80200C80 end:0x80200C84
-	.dtors      start:0x80200FA4 end:0x80200FA8
+	.dtors      start:0x80200FA0 end:0x80200FA8
 	.sdata      start:0x804A0B20 end:0x804A0B28

@@ -37,6 +37,9 @@ void __init_cpp_exceptions()
 }
 #endif
 
+__declspec(section ".dtors") static void* const __destroy_global_chain_reference
+    = __destroy_global_chain;
+
 __declspec(section ".ctors") extern void* const __init_cpp_exceptions_reference
     = __init_cpp_exceptions;
 __declspec(section ".dtors") extern void* const __fini_cpp_exceptions_reference

@@ -1,10 +1,6 @@
-# See config.example.yml for documentation.
 object_base: orig/GLMJ01
 object: sys/main.dol
 hash: 722005ea9c1eab54b114f814734d8f327e5614ee
 symbols: config/GLMJ01/symbols.txt
 splits: config/GLMJ01/splits.txt
-# Change this to match the linker version.
-# See config.example.yml for a list.
 mw_comment_version: 8
-detect_strings: true
