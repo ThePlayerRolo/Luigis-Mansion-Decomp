@@ -12,6 +12,9 @@ Sections:
 	.sbss       type:bss align:32
 	.sdata2     type:rodata align:32
 
+base/PPCArch.c:
+	.text       start:0x801D4B80 end:0x801D4BE4
+
 Runtime.PPCEABI.H/global_destructor_chain.c:
 	.text       start:0x801F5180 end:0x801F51E0
 	.dtors      start:0x80200FA8 end:0x80200FAC

@@ -213,6 +213,8 @@ cflags_base = [
     "-i include",
     "-i libs",
     "-i libs/MSL/MSL_C/MSL_Common/include",
+    "-i libs/MSL/MSL_C/MSL_Common_Embedded/include",
+    "-i libs/dolphin/include",
     f"-i build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",
@@ -258,7 +260,8 @@ config.linker_version = "GC/1.0"
 def DolphinLib(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
     return {
         "lib": lib_name,
-        "mw_version": "GC/1.2.5n",
+        "src_dir" : "libs/dolphin/src",
+        "mw_version": "GC/1.0",
         "cflags": cflags_base,
         "progress_category": "sdk",
         "objects": objects,
@@ -300,6 +303,9 @@ config.libs = [
             Object(Matching, "Runtime.PPCEABI.H/__init_cpp_exceptions.cpp"),
         ],
     },
+    DolphinLib("base", [
+        Object(Matching, "base/PPCArch.c")
+    ]),
 ]
 
 
