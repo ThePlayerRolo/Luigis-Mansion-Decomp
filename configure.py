@@ -309,7 +309,8 @@ config.libs = [
     ]),
     DolphinLib("os", [
         Object(Matching, "os/OSAlarm.c"),
-        Object(Matching, "os/OSArena.c")
+        Object(Matching, "os/OSArena.c"),
+        Object(Matching, "os/OSAudioSystem.c")
     ]),
     DolphinLib("ai", [
         Object(Matching, "ai/ai.c")

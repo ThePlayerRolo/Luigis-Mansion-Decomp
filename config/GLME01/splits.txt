@@ -24,6 +24,10 @@ os/OSArena.c:
 	.sdata      start:0x804D7EA8 end:0x804D7EB0
 	.sbss       start:0x804D95B8 end:0x804D95C0
 
+os/OSAudioSystem.c:
+	.text       start:0x801DAF70 end:0x801DB1DC
+	.data       start:0x80394A40 end:0x80394AC0
+
 ai/ai.c:
 	.text       start:0x801EABD4 end:0x801EB4DC
 	.sbss       start:0x804D9748 end:0x804D9788
