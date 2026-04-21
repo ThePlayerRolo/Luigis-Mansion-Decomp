@@ -320,6 +320,7 @@ config.libs = [
         Object(Matching, "os/OSInterrupt.c"),
         Object(Matching, "os/OSLink.c"),
         Object(Matching, "os/OSMessage.c"),
+        Object(Matching, "os/OSMutex.c"),
 
     ]),
     DolphinLib("ai", [

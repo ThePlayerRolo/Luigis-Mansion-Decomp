@@ -66,6 +66,9 @@ os/OSLink.c:
 os/OSMessage.c:
 	.text       start:0x801D8DE8 end:0x801D8FEC
 
+os/OSMutex.c:
+	.text       start:0x801D8FEC end:0x801D9238
+
 ai/ai.c:
 	.text       start:0x801E5674 end:0x801E5F7C
 	.sbss       start:0x804A2248 end:0x804A2288
