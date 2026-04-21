@@ -39,12 +39,16 @@ os/OSContext.c:
 os/OSError.c:
 	.text       start:0x801D6BF0 end:0x801D6F2C
 	.data       start:0x80389E28 end:0x8038A060
-	.bss        start:0x804948F0 end:0x80494930
+	.bss        start:0x804948F0 end:0x8049492C
 	.sdata      start:0x804A0A20 end:0x804A0A28
 
 os/OSExi.c:
 	.text       start:0x801D6F2C end:0x801D8558
 	.bss        start:0x80494930 end:0x804949E0
+
+os/OSFont.c:
+	.text       start:0x801D8558 end:0x801D85B0
+	.sdata      start:0x804A0A28 end:0x804A0A30
 
 os/OSInterrupt.c:
 	.text       start:0x801D85B0 end:0x801D8DD0

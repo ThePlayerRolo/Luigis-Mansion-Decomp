@@ -46,6 +46,10 @@ os/OSExi.c:
 	.text       start:0x801DC48C end:0x801DDAB8
 	.bss        start:0x804CB188 end:0x804CB240
 
+os/OSFont.c:
+	.text       start:0x801DDAB8 end:0x801DDB10
+	.sdata      start:0x804D7EB8 end:0x804D7EC0
+
 os/OSInterrupt.c:
 	.text       start:0x801DDB10 end:0x801DE330
 	.data       start:0x80395100 end:0x80395198

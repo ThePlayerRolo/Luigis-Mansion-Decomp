@@ -1,4 +1,4 @@
-//This is most likely OSExi and not EXIBios due to position
+//TODO: This file just refuses to link?????? It just ruins the checksum even though everything matches???
 #include <dolphin/exi.h>
 #include <dolphin.h>
 #include <string.h>
@@ -76,7 +76,7 @@ static void SetExiInterruptMask(s32 chan, struct EXIControl * exi) {
     }
 }
 
-static void CompleteTransfer(s32 chan) {
+inline static void CompleteTransfer(s32 chan) {
     struct EXIControl * exi;
     unsigned char * buf;
     unsigned long data;
@@ -251,7 +251,7 @@ EXICallback EXISetExiCallback(s32 chan, EXICallback exiCallback) {
     return prev;
 }
 
-void EXIProbeReset() {
+inline void EXIProbeReset() {
     __gUnknown800030C0[0] = __gUnknown800030C0[1] = 0;
     EXIProbe(0);
     EXIProbe(1);
