@@ -19,6 +19,11 @@ os/OSAlarm.c:
 	.text       start:0x801D52FC end:0x801D59E8
 	.sbss       start:0x804A20A0 end:0x804A20A8
 
+os/OSAlloc.c:
+	.text       start:0x801D59E8 end:0x801D5B54
+	.sdata      start:0x804A0A10 end:0x804A0A18
+	.sbss       start:0x804A20A8 end:0x804A20B8
+
 os/OSArena.c:
 	.text       start:0x801D5B54 end:0x801D5B74
 	.sdata      start:0x804A0A18 end:0x804A0A20
