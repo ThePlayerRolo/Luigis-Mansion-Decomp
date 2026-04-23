@@ -69,6 +69,9 @@ os/OSMessage.c:
 os/OSMutex.c:
 	.text       start:0x801D8FEC end:0x801D9238
 
+os/OSSync.c:
+	.text       start:0x801DAC9C end:0x801DAD20
+
 os/OSTime.c:
 	.text       start:0x801DBE4C end:0x801DC270
 	.data       start:0x8038A110 end:0x8038A170
