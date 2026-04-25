@@ -1,5 +1,0 @@
-Code is mainly based on https://github.com/doldecomp/dolsdk2001
-
-OSExi uses https://github.com/doldecomp/sms/blob/6a8600bc70bb9d6ac3fd2840c6faa16029c9a442/src/dolphin/exi/EXIBios.c for EXISync and carries macros from it
-OSExi also includes exi now and uses the definitions from there (which for some reason didn't match the OSExi ones??
-OSSerial's SIEnablePolling is SMS's variant at https://github.com/doldecomp/sms/blob/main/src/dolphin/si/SIBios.c#L398
