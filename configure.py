@@ -308,6 +308,7 @@ config.libs = [
         Object(Matching, "base/PPCArch.c")
     ]),
     DolphinLib("os", [
+        Object(Matching, "os/OS.c"),
         Object(Matching, "os/OSAlarm.c"),
         Object(Matching, "os/OSAlloc.c"),
         Object(Matching, "os/OSArena.c"),

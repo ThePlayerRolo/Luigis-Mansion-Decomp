@@ -15,6 +15,11 @@ Sections:
 base/PPCArch.c:
 	.text       start:0x801D4B80 end:0x801D4BE4
 
+os/OS.c:
+	.text       start:0x801D4BE4 end:0x801D52FC
+	.data       start:0x803897E0 end:0x803899A0
+	.sbss       start:0x804A2090 end:0x804A20A0
+
 os/OSAlarm.c:
 	.text       start:0x801D52FC end:0x801D59E8
 	.sbss       start:0x804A20A0 end:0x804A20A8
