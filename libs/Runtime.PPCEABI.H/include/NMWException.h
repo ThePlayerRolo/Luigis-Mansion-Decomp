@@ -1,4 +1,3 @@
-//https://github.com/doldecomp/sms/blob/main/include/PowerPC_EABI_Support/Runtime/NMWException.h
 #ifndef _NMWEXCEPTION
 #define _NMWEXCEPTION
 

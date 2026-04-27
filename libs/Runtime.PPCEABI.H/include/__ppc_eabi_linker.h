@@ -1,4 +1,3 @@
-//https://github.com/doldecomp/sms/blob/main/include/PowerPC_EABI_Support/Runtime/__ppc_eabi_linker.h
 #ifndef __PPC_EABI_LINKER
 #define __PPC_EABI_LINKER
 

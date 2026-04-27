@@ -1,4 +1,3 @@
-//https://github.com/doldecomp/sms/blob/main/include/PowerPC_EABI_Support/Runtime/MWCPlusLib.h
 #ifndef _RUNTIME_MWCPLUSLIB_H
 #define _RUNTIME_MWCPLUSLIB_H
 

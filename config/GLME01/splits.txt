@@ -145,6 +145,9 @@ ai/ai.c:
 	.text       start:0x801EABD4 end:0x801EB4DC
 	.sbss       start:0x804D9748 end:0x804D9788
 
+Runtime.PPCEABI.H/__va_arg.c:
+	.text       start:0x80200094 end:0x80200188
+
 Runtime.PPCEABI.H/global_destructor_chain.c:
 	.text       start:0x80200188 end:0x802001E8
 	.dtors      start:0x8020BDE8 end:0x8020BDEC
@@ -158,3 +161,6 @@ Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 
 amcstubs/AmcExi2Stubs.c:
 	.text       start:0x8020AFFC end:0x8020B02C
+
+Runtime.PPCEABI.H/__mem.c:
+	.init       start:0x80003320 end:0x80003464

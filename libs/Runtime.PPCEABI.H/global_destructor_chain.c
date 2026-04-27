@@ -1,4 +1,3 @@
-//https://github.com/doldecomp/sms/blob/main/src/PowerPC_EABI_Support/Runtime/global_destructor_chain.c
 #include "NMWException.h"
 #include "MWCPlusLib.h"
 

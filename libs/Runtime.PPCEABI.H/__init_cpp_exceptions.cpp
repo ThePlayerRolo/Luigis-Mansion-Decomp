@@ -1,4 +1,3 @@
-//https://github.com/doldecomp/sms/blob/6a8600bc70bb9d6ac3fd2840c6faa16029c9a442/src/PowerPC_EABI_Support/Runtime/__init_cpp_exceptions.cpp
 #include "NMWException.h"
 #include "__ppc_eabi_linker.h"
 
