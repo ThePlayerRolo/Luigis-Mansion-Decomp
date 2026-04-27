@@ -63,7 +63,7 @@ void PADControlAllMotors(const u32 *commandArray);
 void PADControlMotor(s32 chan, u32 command);
 void PADSetSpec(u32 spec);
 u32 PADGetSpec();
-int PADGetType(s32 chan, u32  type);
+int PADGetType(s32 chan, u32* type);
 BOOL PADSync(void);
 void PADSetAnalogMode(u32 mode);
 
