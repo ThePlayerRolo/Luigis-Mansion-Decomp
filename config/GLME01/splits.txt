@@ -124,6 +124,13 @@ db/db.c:
 	.data       start:0x80395210 end:0x80395228
 	.sbss       start:0x804D9610 end:0x804D9618
 
+dvd/fstload.c:
+	.text       start:0x801E6CC0 end:0x801E6EE8
+	.data       start:0x80395738 end:0x803957A8
+	.bss        start:0x804CBF98 end:0x804CC008
+	.sdata      start:0x804D7EE0 end:0x804D7EF0
+	.sbss       start:0x804D96C8 end:0x804D96D8
+
 vi/vi.c:
 	.text       start:0x801E6EE8 end:0x801E8724
 	.data       start:0x803957A8 end:0x80395910

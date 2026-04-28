@@ -5,6 +5,7 @@
 
 typedef struct DVDDiskID
 {
+    //TODO: Are gameName and company u8 arrays in this version?
     char gameName[4];
     char company[2];
     u8 diskNumber;
