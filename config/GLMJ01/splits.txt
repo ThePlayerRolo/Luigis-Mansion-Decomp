@@ -128,6 +128,10 @@ dvd/dvdqueue.c:
 	.text       start:0x801E1410 end:0x801E1608
 	.bss        start:0x80495718 end:0x80495738
 
+dvd/dvderror.c:
+	.text       start:0x801E1608 end:0x801E1760
+	.data       start:0x8038A658 end:0x8038A698
+
 dvd/fstload.c:
 	.text       start:0x801E1760 end:0x801E1988
 	.data       start:0x8038A698 end:0x8038A708

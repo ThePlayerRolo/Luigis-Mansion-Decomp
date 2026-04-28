@@ -28,5 +28,6 @@
 #endif
     
 #define ASSERT(cond) ASSERTLINE(__LINE__, cond)
+#define ARRAY_SIZE(o)        (sizeof((o)) / sizeof(*(o)))   // Array size define
 
 #endif // _H_MACROS_

@@ -24,6 +24,9 @@ BOOL __DVDCheckWaitingQueue();
 BOOL __DVDDequeueWaitingQueue(DVDCommandBlock * block);
 BOOL __DVDIsBlockInWaitingQueue(DVDCommandBlock * block);
 
+//dvderror.c
+void __DVDStoreErrorCode(u32 error);
+
 // fstload.c
 void __fstLoad();
 
