@@ -338,7 +338,8 @@ config.libs = [
         Object(Matching, "db/db.c")
     ]),
     DolphinLib("dvd", [
-        Object(Matching, "dvd/fstload.c")
+        Object(Matching, "dvd/dvdqueue.c"),
+        Object(Matching, "dvd/fstload.c"),
     ]),
     DolphinLib("vi", [
         Object(Matching, "vi/vi.c")

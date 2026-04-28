@@ -4,7 +4,7 @@
 #include <dolphin/dvd.h>
 
 // dvd.c
-void __DVDAudioBufferConfig(struct DVDCommandBlock * block, unsigned long enable, unsigned long size, void (* callback)(long, struct DVDCommandBlock *));
+void __DVDAudioBufferConfig(struct DVDCommandBlock * block, u32 enable, u32 size, void (* callback)(long, struct DVDCommandBlock *));
 void __DVDPrepareResetAsync(DVDCBCallback callbac);
 
 // dvdfs.c
@@ -18,11 +18,11 @@ void __DVDInterruptHandler(short unused, struct OSContext * context);
 
 // dvdqueue.c
 void __DVDClearWaitingQueue();
-int __DVDPushWaitingQueue(long prio, struct DVDCommandBlock * block);
+int __DVDPushWaitingQueue(s32 prio, DVDCommandBlock * block);
 struct DVDCommandBlock * __DVDPopWaitingQueue();
-int __DVDCheckWaitingQueue();
-int __DVDDequeueWaitingQueue(struct DVDCommandBlock * block);
-int __DVDIsBlockInWaitingQueue(struct DVDCommandBlock * block);
+BOOL __DVDCheckWaitingQueue();
+BOOL __DVDDequeueWaitingQueue(DVDCommandBlock * block);
+BOOL __DVDIsBlockInWaitingQueue(DVDCommandBlock * block);
 
 // fstload.c
 void __fstLoad();

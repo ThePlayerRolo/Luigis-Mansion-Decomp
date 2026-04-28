@@ -124,6 +124,10 @@ db/db.c:
 	.data       start:0x80395210 end:0x80395228
 	.sbss       start:0x804D9610 end:0x804D9618
 
+dvd/dvdqueue.c:
+	.text       start:0x801E6970 end:0x801E6B68
+	.bss        start:0x804CBF78 end:0x804CBF98
+
 dvd/fstload.c:
 	.text       start:0x801E6CC0 end:0x801E6EE8
 	.data       start:0x80395738 end:0x803957A8
