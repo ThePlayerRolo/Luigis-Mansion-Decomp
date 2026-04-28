@@ -217,7 +217,7 @@ cflags_base = [
     "-i libs/dolphin/include",
     f"-i build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
-    f"-DVERSION_{config.version}",
+    f"-DVERSION={version_num}",
 ]
 
 # Debug flags
@@ -246,6 +246,10 @@ cflags_runtime = [
     "-inline auto",
 ]
 
+cflags_game = [
+    *cflags_base,
+    "-RTTI on",
+]
 # REL flags
 cflags_rel = [
     *cflags_base,
@@ -287,6 +291,16 @@ def Runtime(objects: List[Object]) -> Dict[str, Any]:
         "cflags": cflags_runtime,
         "progress_category": "sdk",
         "src_dir": "libs/",
+        "objects": objects,
+    }
+
+def Game(objects: List[Object]) -> Dict[str, Any]:
+    return {
+        "lib": "Game",
+        "mw_version": config.linker_version,
+        "cflags": cflags_game,
+        "progress_category": "game",
+        "src_dir": "src/",
         "objects": objects,
     }
 
@@ -361,6 +375,9 @@ config.libs = [
     ]),
     DolphinLib("amcstubs", [
         Object(Matching, "amcstubs/AmcExi2Stubs.c")
+    ]),
+    Game([
+        Object(Matching, "Unsorted/staticData.cpp"),  # TODO Verify this is a seperate file
     ]),
 ]
 

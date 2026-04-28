@@ -7,3 +7,8 @@ splits: config/GLME01/splits.txt
 # Change this to match the linker version.
 # See config.example.yml for a list.
 mw_comment_version: 8
+
+extract:
+    - symbol: staticdata_usa_arc
+      binary: staticdata_usa.arc
+      header: staticdata_usa_arc.inc

@@ -4,3 +4,8 @@ hash: 722005ea9c1eab54b114f814734d8f327e5614ee
 symbols: config/GLMJ01/symbols.txt
 splits: config/GLMJ01/splits.txt
 mw_comment_version: 8
+
+extract:
+    - symbol: staticdata_arc
+      binary: staticdata.arc
+      header: staticdata_arc.inc
