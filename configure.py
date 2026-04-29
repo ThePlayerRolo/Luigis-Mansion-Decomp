@@ -352,7 +352,7 @@ config.libs = [
         Object(Matching, "db/db.c")
     ]),
     DolphinLib("dvd", [
-        Object(MatchingFor("GLME01"), "dvd/dvdfs.c"),
+        Object(Matching, "dvd/dvdfs.c"),
         Object(Matching, "dvd/dvdqueue.c"),
         Object(Matching, "dvd/dvderror.c"),
         Object(Matching, "dvd/fstload.c"),
